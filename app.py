@@ -4,8 +4,8 @@ import pandas as pd
 st.set_page_config(layout="wide")  # Expande el ancho de la página
 
 # Cargar el archivo Excel
-file_path = r"C:\Users\mateo\Downloads\ALERTAS EN WEB\ALERTAS 03-02-2025-2.xlsx"
-df = pd.read_excel(file_path, sheet_name="DETALLE DE ACTUALIZACIÓN ")
+file_path = "ALERTAS 03-02-2025-2.xlsx"
+df = pd.read_excel(file_path, sheet_name="DETALLE DE ACTUALIZACIÓN")
 
 # Título del dashboard
 st.title("📊 Dashboard de Alertas")

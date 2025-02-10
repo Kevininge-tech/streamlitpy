@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(layout="wide")  # Expande el ancho de la página
 
 # Cargar el archivo Excel
-file_path = "ALERTAS 03-02-2025-2.xlsx"
+file_path = "ALERTAS 07-02-2025-2.xlsx"
 df = pd.read_excel(file_path, sheet_name="DETALLE DE ACTUALIZACIÓN")
 
 # Título del dashboard
@@ -24,7 +24,7 @@ if estados:
 def highlight_row(row):
     estado = str(row["ESTADO DE ACTUALIZACIÓN"]).strip().upper()  # Convertir a texto y eliminar espacios
     
-    if "AL DÍA" in estado:
+    if "AL DÍA" in estado or "ACTUALIZADO EL DIA" in estado:
         color = "background-color: green; color: white"  # 🟢 Verde
     elif "PENDIENTE" in estado or "PENDIENTE DE ACTUALIZAR" in estado:
         color = "background-color: yellow; color: black"  # 🟡 Amarillo

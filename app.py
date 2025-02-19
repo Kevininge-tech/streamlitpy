@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(layout="wide")  # Expande el ancho de la página
 
 # Cargar el archivo Excel
-file_path = "ALERTAS 07-02-2025-2.xlsx"
+file_path = "ALERTAS 19-02-2025-2.xlsx"
 df = pd.read_excel(file_path, sheet_name="DETALLE DE ACTUALIZACIÓN")
 
 # Título del dashboard
